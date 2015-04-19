@@ -28,11 +28,11 @@ namespace ConsoleApplication1
         {
             while (true)
             {
-                Boolean addData = false;
                 Boolean fillData = true;
 
                 String console = Console.ReadLine();
-                if (console.Equals("qwop", StringComparison.Ordinal))
+                Console.Clear();
+                if (console.Equals("ZXc9869Y69U69b", StringComparison.Ordinal))
                 {
                     fillData = true;
                     Console.WriteLine("\n\n\nYou have 8 seconds to navigate to the login field!" +
@@ -44,7 +44,7 @@ namespace ConsoleApplication1
 
                     }
                 }
-                if (console.Equals("FuckPasswords", StringComparison.Ordinal))
+                if (console.Equals("Done", StringComparison.Ordinal))
                     return;
 
                 if (fillData)
@@ -56,10 +56,12 @@ namespace ConsoleApplication1
                     writePassword(needed.Password);
                 }
 
-                if (addData)
-                {
-                    //initialize username and password list and site ID list
-                    String[] usernameList = { "JohnDoe1@email.com", "JaneDoe1@email.com", "JohnDoe2@email.com",
+                Console.WriteLine("Would you like to log in again? If so complete activation gesture.");
+            }
+        }
+
+        static void addRandomContent(){
+             String[] usernameList = { "JohnDoe1@email.com", "JaneDoe1@email.com", "JohnDoe2@email.com",
                                                 "JaneDoe2@email.com", "JohnDoe3@email.com" };
                     String[] siteList = { "facebook", "netflix", "dominos", "reddit", "google", "microsoft" };
                     for (int i = 0; i < usernameList.Length; i++)
@@ -67,10 +69,9 @@ namespace ConsoleApplication1
                         Task t = writeToDB(new LoginInfo { UserName = usernameList[i], Password = generatePass(10), DomainKey = siteList[i]});
                         t.Wait();
                     }
-                }
-                Console.WriteLine("Would you like to log in again? If so complete activation gesture.");
-            }
         }
+
+
 
         static LoginInfo findEntry(String url){
             for (int i = 0; i < logs.Count; i++)
@@ -78,7 +79,7 @@ namespace ConsoleApplication1
                 if (url.Contains(logs[i].DomainKey))
                     return logs[i];
             }
-            Console.WriteLine("You suck. You haven't added that site to the database.");
+            Console.WriteLine("You haven't added that site to the database.");
             Application.Exit();
             return null;
         }

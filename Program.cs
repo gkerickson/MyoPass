@@ -26,6 +26,7 @@ namespace ConsoleApplication1
         [STAThreadAttribute]
         static void Main(string[] args)
         {
+//            addRandomContent();
             while (true)
             {
                 Boolean fillData = true;
@@ -72,14 +73,13 @@ namespace ConsoleApplication1
         }
 
 
-
         static LoginInfo findEntry(String url){
             for (int i = 0; i < logs.Count; i++)
             {
                 if (url.Contains(logs[i].DomainKey))
                     return logs[i];
             }
-            Console.WriteLine("You haven't added that site to the database.");
+            Console.WriteLine("You suck. You haven't added that site to the database.");
             Application.Exit();
             return null;
         }
@@ -127,12 +127,13 @@ namespace ConsoleApplication1
            Random rng = new Random();
            for (int i = 0; i < length; i++)
            {
-               int add = 96;
-               while(add > 96 || add < 81)
-                    add = rng.Next(48, 112);
-               if (add < 91)
-                   pass += Convert.ToChar(90 - add);
-               pass += (char)add;
+//               int add = 96;
+//               while(add > 96 || add < 81)
+//                    add = rng.Next(48, 112);
+//               if (add < 91)
+//                   pass += Convert.ToChar(90 - add);
+//               pass += (char)add;
+               pass += (char)rng.Next(65, 91);
            }
            return pass;
        }

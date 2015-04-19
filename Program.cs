@@ -29,11 +29,11 @@ namespace ConsoleApplication1
 //            addRandomContent();
             while (true)
             {
-                Boolean fillData = true;
+                Boolean fillData = false;
 
                 String console = Console.ReadLine();
                 Console.Clear();
-                if (console.Equals("ZXc9869Y69U69b", StringComparison.Ordinal))
+                if (console.Equals("zxc9869y69u69b", StringComparison.Ordinal))
                 {
                     fillData = true;
                     Console.WriteLine("\n\n\nYou have 8 seconds to navigate to the login field!" +
@@ -45,6 +45,7 @@ namespace ConsoleApplication1
 
                     }
                 }
+
                 if (console.Equals("Done", StringComparison.Ordinal))
                     return;
 

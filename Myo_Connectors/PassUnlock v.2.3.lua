@@ -42,14 +42,14 @@ end
 
 function unlocked()
   --myo.debug("Unlocked!")
-        myo.keyboard("z","press", "left_shift")
-        myo.keyboard("x","press", "left_shift")
+        myo.keyboard("z","press", "shift")
+        myo.keyboard("x","press", "shift")
         myo.keyboard("c","press")
         myo.keyboard("9","press")
         myo.keyboard("8","press")
         myo.keyboard("6","press")
         myo.keyboard("9","press")
-        myo.keyboard("y","press","left_shift")
+        myo.keyboard("y","press","shift")
         myo.keyboard("6","press")
         myo.keyboard("9","press")
         myo.keyboard("u","press")
@@ -68,7 +68,8 @@ function tabbackward()
 end
 
 function commandprompt()
-  
+  myo.keyboard("n","press")
+  myo.keyboard("o","press")
 end
 
 function onPoseEdge(pose, edge)

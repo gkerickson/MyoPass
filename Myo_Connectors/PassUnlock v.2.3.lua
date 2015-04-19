@@ -72,6 +72,17 @@ function commandprompt()
   myo.keyboard("o","press")
 end
 
+function openprogram()
+	myo.keyboard("m","down")
+	myo.keyboard("y","down")
+	myo.keyboard("o","down")
+	myo.keyboard("p","down")
+	myo.keyboard("m","up")
+	myo.keyboard("y","up")
+	myo.keyboard("o","up")
+	myo.keyboard("p","up")
+	end
+
 function onPoseEdge(pose, edge)
     --myo.debug("onPoseEdge: " .. pose .. ", " .. edge)
     
@@ -82,7 +93,7 @@ function onPoseEdge(pose, edge)
 
    		if(pitch>7*3.1415/16 and pitch<9*3.14/16) then
     		if (pose=="waveIn" and edge=="on") then
-    	     unlocked()
+    	     	     openprogram()
     		end
     	end
 

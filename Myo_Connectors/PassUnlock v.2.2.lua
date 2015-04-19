@@ -17,7 +17,7 @@ function onForegroundWindowChange(app, title)
     myo.debug("onForegroundWindowChange: " .. app .. ", " .. title)
     if (app=="Myo Connect.exe") then
     	myo.unlock("timed")
-    	myo.debug("locking policy = hold")
+    	myo.debug("locking policy = timed")
       return true
 	else
 		myo.unlock("timed")
@@ -68,7 +68,7 @@ function tabbackward()
 end
 
 function commandprompt()
-  myo.keyboard("f11","press")
+  
 end
 
 function onPoseEdge(pose, edge)

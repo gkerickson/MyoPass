@@ -2,8 +2,9 @@
 *
 
 !.gitignore
-!bin/
+!bin/*
 !Program.cs
+!Myo_Connectors/*
 
 !*/
 

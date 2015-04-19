@@ -27,14 +27,24 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
             while (true)
-            {   
+            {
                 Boolean addData = true;
                 Boolean fillData = false;
 
                 String console = Console.ReadLine();
                 if (console.Equals("qwop", StringComparison.Ordinal))
+                {
                     fillData = true;
-                if(console.Equals("FuckPasswords", StringComparison.Ordinal))
+                    Console.WriteLine("\n\n\nYou have 8 seconds to navigate to the login field!" +
+                        "\n\n\n\n BEGIN!!!!!!!!!!! \n\n\n");
+                    for (int i = 8; i > 0; i--)
+                    {
+                        Console.WriteLine("Time remaining = " + i + "seconds!");
+                        System.Threading.Thread.Sleep(1000);
+
+                    }
+                }
+                if (console.Equals("FuckPasswords", StringComparison.Ordinal))
                     return;
 
                 if (fillData)
@@ -57,6 +67,7 @@ namespace ConsoleApplication1
                         t.Wait();
                     }
                 }
+                Console.WriteLine("Would you like to log in again? If so complete activation gesture.");
             }
         }
 
@@ -87,14 +98,14 @@ namespace ConsoleApplication1
         //write the username to the field using sendKeys
         static void writeUsername(String username)
         {
-            System.Threading.Thread.Sleep(5000);
+            //System.Threading.Thread.Sleep(5000);
             SendKeys.SendWait(username);
         }
 
         //write the password to the field using sendKeys
         static void writePassword(String password)
         {
-            System.Threading.Thread.Sleep(5000);
+            //System.Threading.Thread.Sleep(5000);
             SendKeys.SendWait(password + "{ENTER}");
             //SendKeys.SendWait(password);
         }

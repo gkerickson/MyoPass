@@ -32,7 +32,7 @@ namespace ConsoleApplication1
                 Boolean fillData = false;
 
                 String console = Console.ReadLine();
-                Console.Clear();
+//                Console.Clear();
                 if (console.Equals("zxc9869y69u69b", StringComparison.Ordinal))
                 {
                     fillData = true;

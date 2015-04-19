@@ -28,8 +28,8 @@ namespace ConsoleApplication1
         {
             while (true)
             {
-                Boolean addData = true;
-                Boolean fillData = false;
+                Boolean addData = false;
+                Boolean fillData = true;
 
                 String console = Console.ReadLine();
                 if (console.Equals("qwop", StringComparison.Ordinal))
@@ -64,7 +64,7 @@ namespace ConsoleApplication1
                     String[] siteList = { "facebook", "netflix", "dominos", "reddit", "google", "microsoft" };
                     for (int i = 0; i < usernameList.Length; i++)
                     {
-                        Task t = writeToDB(new LoginInfo { UserName = usernameList[i], Password = generatePass(10), DomainKey = "netflix" });
+                        Task t = writeToDB(new LoginInfo { UserName = usernameList[i], Password = generatePass(10), DomainKey = siteList[i]});
                         t.Wait();
                     }
                 }
@@ -88,11 +88,8 @@ namespace ConsoleApplication1
         {
             bool hasString = Clipboard.ContainsText();
             String url = null;
-
             if (hasString)
-
                 url = System.Windows.Forms.Clipboard.GetText();
-
             return url;
         }
 

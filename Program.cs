@@ -46,7 +46,7 @@ namespace ConsoleApplication1
                     }
                 }
 
-                if (console.Equals("Done", StringComparison.Ordinal))
+                if (console.Equals("exit", StringComparison.Ordinal))
                     return;
 
                 if (fillData)

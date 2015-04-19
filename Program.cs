@@ -59,7 +59,8 @@ namespace ConsoleApplication1
                 if (addData)
                 {
                     //initialize username and password list and site ID list
-                    String[] usernameList = { "JohnDoe1@email.com", "JaneDoe1@email.com", "JohnDoe2@email.com", "JaneDoe2@email.com", "JohnDoe3@email.com" };
+                    String[] usernameList = { "JohnDoe1@email.com", "JaneDoe1@email.com", "JohnDoe2@email.com",
+                                                "JaneDoe2@email.com", "JohnDoe3@email.com" };
                     String[] siteList = { "facebook", "netflix", "dominos", "reddit", "google", "microsoft" };
                     for (int i = 0; i < usernameList.Length; i++)
                     {
@@ -99,7 +100,7 @@ namespace ConsoleApplication1
         static void writeUsername(String username)
         {
             //System.Threading.Thread.Sleep(5000);
-            SendKeys.SendWait(username);
+            SendKeys.SendWait(username + "{TAB}");
         }
 
         //write the password to the field using sendKeys

@@ -31,6 +31,7 @@ namespace ConsoleApplication1
                 Boolean fillData = true;
 
                 String console = Console.ReadLine();
+                Console.Clear();
                 if (console.Equals("ZXc9869Y69U69b", StringComparison.Ordinal))
                 {
                     fillData = true;
@@ -78,7 +79,7 @@ namespace ConsoleApplication1
                 if (url.Contains(logs[i].DomainKey))
                     return logs[i];
             }
-            Console.WriteLine("You suck. You haven't added that site to the database.");
+            Console.WriteLine("You haven't added that site to the database.");
             Application.Exit();
             return null;
         }

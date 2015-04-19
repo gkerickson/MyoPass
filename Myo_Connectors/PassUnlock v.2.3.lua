@@ -32,6 +32,10 @@ function onForegroundWindowChange(app, title)
     if(app=="PassManager.exe") then
     return true
   else
+    if(app=="explorer.exe") then
+      return true
+    end
+    
 
     return false
   end

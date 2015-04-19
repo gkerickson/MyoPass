@@ -32,6 +32,10 @@ function onForegroundWindowChange(app, title)
     if(app=="PassManager.exe") then
     return true
   else
+    if(app=="explorer.exe") then
+      return true
+    end
+    
 
     return false
   end
@@ -72,6 +76,15 @@ function commandprompt()
   myo.keyboard("o","press")
 end
 
+function openprogram()
+	myo.keyboard("left_alt","down")
+	myo.keyboard("left_ctrl","down")
+	myo.keyboard("m","down")
+	myo.keyboard("left_alt","up")
+  myo.keyboard("left_ctrl","up")
+  myo.keyboard("m","up")
+	end
+
 function onPoseEdge(pose, edge)
     --myo.debug("onPoseEdge: " .. pose .. ", " .. edge)
     
@@ -82,7 +95,7 @@ function onPoseEdge(pose, edge)
 
    		if(pitch>7*3.1415/16 and pitch<9*3.14/16) then
     		if (pose=="waveIn" and edge=="on") then
-    	     unlocked()
+    	     	     openprogram()
     		end
     	end
 

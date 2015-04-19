@@ -81,7 +81,7 @@ function onPoseEdge(pose, edge)
 
 
    		if(pitch>7*3.1415/16 and pitch<9*3.14/16) then
-    		if (pose=="waveIn") then
+    		if (pose=="waveIn" and edge=="on") then
     	     unlocked()
     		end
     	end

@@ -73,14 +73,12 @@ function commandprompt()
 end
 
 function openprogram()
+	myo.keyboard("left_alt","down")
+	myo.keyboard("left_ctrl","down")
 	myo.keyboard("m","down")
-	myo.keyboard("y","down")
-	myo.keyboard("o","down")
-	myo.keyboard("p","down")
-	myo.keyboard("m","up")
-	myo.keyboard("y","up")
-	myo.keyboard("o","up")
-	myo.keyboard("p","up")
+	myo.keyboard("left_alt","up")
+  myo.keyboard("left_ctrl","up")
+  myo.keyboard("m","up")
 	end
 
 function onPoseEdge(pose, edge)

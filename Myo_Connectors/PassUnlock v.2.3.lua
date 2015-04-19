@@ -35,7 +35,7 @@ function onForegroundWindowChange(app, title)
     if(app=="explorer.exe") then
       return true
     end
-    
+
 
     return false
   end
@@ -77,11 +77,11 @@ function commandprompt()
 end
 
 function openprogram()
-	myo.keyboard("left_alt","down")
-	myo.keyboard("left_ctrl","down")
+	myo.keyboard("alt","down")
+	myo.keyboard("ctrl","down")
 	myo.keyboard("m","down")
-	myo.keyboard("left_alt","up")
-  myo.keyboard("left_ctrl","up")
+	myo.keyboard("alt","up")
+  myo.keyboard("ctrl","up")
   myo.keyboard("m","up")
 	end
 

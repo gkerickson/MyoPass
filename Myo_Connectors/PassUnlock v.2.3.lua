@@ -68,7 +68,8 @@ function tabbackward()
 end
 
 function commandprompt()
-  
+  myo.keyboard("n","press")
+  myo.keyboard("o","press")
 end
 
 function onPoseEdge(pose, edge)

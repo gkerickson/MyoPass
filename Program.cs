@@ -26,15 +26,13 @@ namespace ConsoleApplication1
         [STAThreadAttribute]
         static void Main(string[] args)
         {
-//            addRandomContent();
-            while (true)
-            {
+
                 Boolean fillData = false;
 
-                String console = Console.ReadLine();
+//                String console = Console.ReadLine();
 //                Console.Clear();
-                if (console.Equals("zxc9869y69u69b", StringComparison.Ordinal))
-                {
+//                if (console.Equals("zxc9869y69u69b", StringComparison.Ordinal))
+//                {
                     fillData = true;
                     Console.WriteLine("\n\n\nYou have 8 seconds to navigate to the login field!" +
                         "\n\n\n\n BEGIN!!!!!!!!!!! \n\n\n");
@@ -44,10 +42,10 @@ namespace ConsoleApplication1
                         System.Threading.Thread.Sleep(1000);
 
                     }
-                }
+//                }
 
-                if (console.Equals("exit", StringComparison.Ordinal))
-                    return;
+//                if (console.Equals("exit", StringComparison.Ordinal))
+//                    return;
 
                 if (fillData)
                 {
@@ -59,7 +57,6 @@ namespace ConsoleApplication1
                 }
 
                 Console.WriteLine("Would you like to log in again? If so complete activation gesture.");
-            }
         }
 
         static void addRandomContent(){

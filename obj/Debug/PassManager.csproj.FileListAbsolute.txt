@@ -1,0 +1,17 @@
+c:\users\mac\documents\HACK\Password_Manager\PassManager\PassManager\bin\Debug\PassManager.exe.config
+c:\users\mac\documents\HACK\Password_Manager\PassManager\PassManager\bin\Debug\PassManager.exe
+c:\users\mac\documents\HACK\Password_Manager\PassManager\PassManager\bin\Debug\PassManager.pdb
+c:\users\mac\documents\HACK\Password_Manager\PassManager\PassManager\bin\Debug\Microsoft.WindowsAzure.Mobile.dll
+c:\users\mac\documents\HACK\Password_Manager\PassManager\PassManager\bin\Debug\Microsoft.WindowsAzure.Mobile.Ext.dll
+c:\users\mac\documents\HACK\Password_Manager\PassManager\PassManager\bin\Debug\Newtonsoft.Json.dll
+c:\users\mac\documents\HACK\Password_Manager\PassManager\PassManager\bin\Debug\System.Net.Http.Extensions.dll
+c:\users\mac\documents\HACK\Password_Manager\PassManager\PassManager\bin\Debug\System.Net.Http.Primitives.dll
+c:\users\mac\documents\HACK\Password_Manager\PassManager\PassManager\bin\Debug\Microsoft.WindowsAzure.Mobile.xml
+c:\users\mac\documents\HACK\Password_Manager\PassManager\PassManager\bin\Debug\Microsoft.WindowsAzure.Mobile.Ext.xml
+c:\users\mac\documents\HACK\Password_Manager\PassManager\PassManager\bin\Debug\Newtonsoft.Json.xml
+c:\users\mac\documents\HACK\Password_Manager\PassManager\PassManager\bin\Debug\System.Net.Http.Extensions.xml
+c:\users\mac\documents\HACK\Password_Manager\PassManager\PassManager\bin\Debug\System.Net.Http.Primitives.xml
+c:\users\mac\documents\HACK\Password_Manager\PassManager\PassManager\obj\Debug\PassManager.csproj.App.config
+c:\users\mac\documents\HACK\Password_Manager\PassManager\PassManager\obj\Debug\PassManager.csprojResolveAssemblyReference.cache
+c:\users\mac\documents\HACK\Password_Manager\PassManager\PassManager\obj\Debug\PassManager.exe
+c:\users\mac\documents\HACK\Password_Manager\PassManager\PassManager\obj\Debug\PassManager.pdb

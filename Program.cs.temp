@@ -1,0 +1,87 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Microsoft.WindowsAzure.MobileServices;
+
+namespace PassManager
+{
+    public class LoginInfo
+    {
+        public string name { get; set; }
+        public string pass { get; set; }
+        public string domainKey { get; set; }
+    }
+
+    class Program
+    {
+
+        public static MobileServiceClient MobileService = new MobileServiceClient(
+            "https://cyborggangsta.azure-mobile.net/",
+            "VoVhDketKMHxkPzYfBSpJUvvKuAgHk36");
+
+        String[] usernameList = { "JohnDoe1@email.com", "JaneDoe1@email.com", 
+                                        "JohnDoe2@email.com", "JaneDoe2@email.com", "JohnDoe3@email.com" };
+
+        static void Main(string[] args)
+        {
+
+            Task t = writeToDB();
+            t.Wait();
+
+
+            //while (true)
+        //    {
+                //if (MioGivesPass)
+
+                // READ FROM CLIPBOARD
+
+                // GET CORRECT SET FROM DATABASE
+
+                // PASTE USERNAME TO CURSOR
+
+                // PASTE PASSWORD TO CURSOR                
+
+        //    }
+        }
+
+        string readClipboard()
+        {
+
+            return null;
+        }
+
+        bool pasteUser(LoginInfo toPaste)
+        {
+            return true;
+        }
+
+        bool pastePass(LoginInfo toPaste)
+        {
+            return true;
+        }
+
+        async static Task writeToDB()
+        {
+            LoginInfo item = new LoginInfo {name = "Yellow Editionasdf", pass = generatePass(10), domainKey = "Dominos"};
+            await MobileService.GetTable<LoginInfo>().InsertAsync(item);
+        }
+
+        LoginInfo readDB(string webAddress)
+        {
+            return null;
+        }
+
+        static string generatePass(int length)
+        {
+            string pass = "";
+            for (int i = 0; i < length; i++)
+            {
+                Random rng = new Random();
+                pass += (char)rng.Next(65, 91);
+            }
+            return pass;
+        }
+    }
+}

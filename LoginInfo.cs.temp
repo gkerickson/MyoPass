@@ -1,0 +1,11 @@
+﻿using System;
+
+namespace PassManager
+{
+    public class LoginInfo
+    {
+        public string name { get; set; }
+        public string pass { get; set; }
+        public string domainKey { get; set; }
+    }
+}

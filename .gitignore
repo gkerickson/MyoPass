@@ -1,0 +1,9 @@
+# Ignore Everything
+*
+
+!.gitignore
+!bin/
+!Program.cs
+
+!*/
+
